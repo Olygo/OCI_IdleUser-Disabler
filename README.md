@@ -10,8 +10,8 @@ This script runs :
 
 ## Table of Contents
 
-- [Parameters for execution](#Parametersforexecution)
-- [How to use](#Howtouse)
+- [Parameters for execution](#Parameters-for-execution)
+- [How to use](#How-to-use)
 - [Setup](#Setup)
 - [Screenshots](#Screenshots)
 - [Disclaimer](#disclaimer)
@@ -28,9 +28,9 @@ Default authentication uses [Instance Principals](https://docs.public.oneportal.
 | -cf           |                      | authenticate through local OCI config_file                           | 
 | -cfp          | config_file          | change OCI config_file path, default: ~/.oci/config                  | 
 | -cp           | config_profile       | indicate config file section to use, default: DEFAULT                | 
-| -endpoint     | identity Domain URL  | compartment to store the bucket report, default: root                | 
+| -endpoint     | identity Domain URL  | you must pass the URL of your IAM Domain.                            | 
 | -days         | days integer         | number of days of user inactivity, default : 60                      | 
-| -dryrun       |                      | Evaluate users without deactivating                                  | 
+| -dryrun       |                      | evaluate users without deactivating                                  | 
 
 ## How to use
 ##### Default :[Domain URL](https://docs.oracle.com/en-us/iaas/Content/Identity/domains/to-view-details-of-an-identity-domain.htm)
