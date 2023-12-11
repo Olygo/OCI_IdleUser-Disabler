@@ -31,6 +31,7 @@ Default authentication uses [Instance Principals](https://docs.public.oneportal.
 | -endpoint     | identity Domain URL  | you must pass the URL of your IAM Domain.                            | 
 | -days         | days integer         | number of days of user inactivity, default : 60                      | 
 | -dryrun       |                      | evaluate users without deactivating                                  | 
+| -details      |                      | display full user ocids (76 char)                                    | 
 
 ## How to use
 ##### Default :[Domain URL](https://docs.oracle.com/en-us/iaas/Content/Identity/domains/to-view-details-of-an-identity-domain.htm)

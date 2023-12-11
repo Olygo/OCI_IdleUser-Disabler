@@ -150,7 +150,7 @@ def print_error(*args, color=red, level='ERROR'):
 # print formated output 
 # - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-def print_output(color, user_rank, data):
+def print_output(color, user_rank, data, details=True):
 
     rank = str(user_rank)
     user = data.get('name')
@@ -160,6 +160,8 @@ def print_output(color, user_rank, data):
     days = data.get('days')
     ocid = data.get('ocid')
 
+    ocid = ocid if details else "..." + ocid[-10:]
+    
     formatted_string = color(
         f'{rank:<5} '
         f'{user[0:40]:<40} '
